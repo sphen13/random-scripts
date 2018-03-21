@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get install -y netcat jq
 usermod -aG docker zabbix
 mkdir /etc/zabbix/scripts
 wget -O /etc/zabbix/scripts/docker.sh https://github.com/digiapulssi/zabbix-monitoring-scripts/raw/master/etc/zabbix/scripts/docker.sh
